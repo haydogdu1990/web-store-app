@@ -1,0 +1,7 @@
+.image {
+  min-width: 500px;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 6px;
+}

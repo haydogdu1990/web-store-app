@@ -6,6 +6,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.1.0
   autoprefixer: ^10.4.14
   daisyui: ^2.51.5
+  nuka-carousel: ^5.5.1
   postcss: ^8.4.21
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -14,9 +15,8 @@ specifiers:
   vite: ^4.2.0
 
 dependencies:
-  autoprefixer: 10.4.14_postcss@8.4.21
   daisyui: 2.51.5_j7yt3jd32cwenjqavrrga47yr4
-  postcss: 8.4.21
+  nuka-carousel: 5.5.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.9.0_biqbaboplfbrettd7655fr4n2y
@@ -25,6 +25,8 @@ devDependencies:
   '@types/react': 18.0.29
   '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 3.1.0_vite@4.2.1
+  autoprefixer: 10.4.14_postcss@8.4.21
+  postcss: 8.4.21
   tailwindcss: 3.2.7_postcss@8.4.21
   vite: 4.2.1
 
@@ -602,7 +604,6 @@ packages:
       picocolors: 1.0.0
       postcss: 8.4.21
       postcss-value-parser: 4.2.0
-    dev: false
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -824,7 +825,6 @@ packages:
 
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
-    dev: false
 
   /fsevents/2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -970,6 +970,16 @@ packages:
   /normalize-range/0.1.2:
     resolution: {integrity: sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==}
     engines: {node: '>=0.10.0'}
+
+  /nuka-carousel/5.5.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-igZOVoalYsgZLI1fony2LqUeBiga8TWRD0qb/J7Mb69ijBvRokoir2yHBxB3IoBzCzAxtgKW0T1bQDj7FZvcmQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      react: ^15.3.0 || ^16.0.0 || ^17.0.1 || ^18.0.0
+      react-dom: ^15.3.0 || ^16.0.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /object-hash/3.0.0:
