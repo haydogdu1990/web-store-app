@@ -3,6 +3,8 @@ import ImageSlider from "../../components/ImageSlider";
 
 import ProductCard from "../../components/ProductCard";
 
+import Products from "../api";
+
 import style from "./style.module.css";
 
 const HomePage = () => {
@@ -15,7 +17,8 @@ const HomePage = () => {
         }
       >
         <ImageSlider />
-        <ProductCard />
+        {/* <ProductCard /> */}
+        <Products />
       </div>
     </div>
   );
