@@ -3,9 +3,9 @@
 - [x]   Web-store-app vite react
 
  - [x] https://daisyui.com/
- 
+
  - [x] page layout component
- 
+
  - [x] menu
 
  - [x] route
