@@ -1,3 +1,10 @@
 .main {
   overflow: hidden;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

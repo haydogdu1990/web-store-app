@@ -1,15 +1,18 @@
-import React from "react";
+import { useContext } from "react";
 import style from "./style.module.css";
 
 import profilimage from "../../images/stock/photo-1534528741775-53994a69daeb.jpg";
 
+import { ThemeContext } from "../../context/ThemeContext";
+
 const Navbar = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div>
       <div
         className={
           style.gridcontainer +
-          " navbar bg-base-100 rounded-lg mt-2 max-w-7xl mx-auto border border-stone-400"
+          " navbar bg-base-100 rounded-lg  max-w-7xl mx-auto border border-stone-400"
         }
       >
         <div className="navbar-start">
@@ -50,7 +53,15 @@ const Navbar = () => {
         <div className="navbar-end">
           {/* Theme */}
           <label className="swap swap-rotate ">
-            <input type="checkbox" />
+            <input
+              defaultChecked={
+                localStorage.getItem("theme") == "dark" ? "" : "checked"
+              }
+              type="checkbox"
+              onClick={(e) =>
+                e.target.checked ? setTheme("retro") : setTheme("dark")
+              }
+            />
 
             <svg
               className="swap-on fill-current w-10 h-10"

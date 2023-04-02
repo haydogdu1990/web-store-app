@@ -4,6 +4,9 @@ import HomePage from "./pages/HomePage";
 import ProductCategory from "./pages/ProductCategory";
 import ProductDetail from "./pages/ProductDetail";
 
+import { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
+
 import "./App.css";
 import "./style.css";
 import "./output.css";
@@ -16,8 +19,9 @@ import ProductCard from "./components/ProductCard";
 import ImageSlider from "./components/ImageSlider";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div>
+    <div data-theme={theme}>
       <Navbar />
       <Menu />
 

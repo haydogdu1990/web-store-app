@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import img from "../../images/stock/photo-1606107557195-0e29a4b5b4aa.jpg";
 import { Link } from "react-router-dom";
 
@@ -6,7 +6,7 @@ import style from "./style.module.css";
 
 const ProductCard = ({ product }) => {
   return (
-    <>
+    <div>
       {/* <div className={style.card}>
         <img src={product.thumbnail} alt="" />
 
@@ -34,7 +34,7 @@ const ProductCard = ({ product }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

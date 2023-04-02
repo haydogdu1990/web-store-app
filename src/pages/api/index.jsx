@@ -1,12 +1,15 @@
+import { useContext, useEffect, useState } from "react";
+
 import ProductCard from "../../components/ProductCard";
 import axios from "axios";
 import styles from "./styles.module.css";
-// import { GlobalContext } from "../../Context/GlobalState";
-import { useContext, useEffect, useState } from "react";
+
+import { ProductContext } from "../../context/ProductContext";
 
 const Products = () => {
-  //   const { setGlobalProducts } = useContext(GlobalContext);
-  const [products, setProducts] = useState([]);
+  const { products, setProducts } = useContext(ProductContext);
+
+  //const [products, setProducts] = useState([]);
 
   const fetchData = async () => {
     const response = await axios.get("https://dummyjson.com/products");
@@ -22,10 +25,8 @@ const Products = () => {
 
   return (
     <div className={styles.container}>
-      {products.map((product, idx) => (
-        <div>
-          <ProductCard product={product} key={idx} />
-        </div>
+      {products.map((product) => (
+        <ProductCard product={product} key={product.id} />
       ))}
     </div>
   );
