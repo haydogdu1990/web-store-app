@@ -10,7 +10,7 @@
 
  - [x] route
 
- - [ ] state manegment lang, theme, oturum bilgisi
+ - [ ]x state manegment lang, theme, oturum bilgisi
 
  - [ ] api
 
